@@ -1,5 +1,5 @@
 
-Variable: variable is a container which stores the value of same datatype.
+# Variable: variable is a container which stores the value of same datatype.
     Types of variables used in js:
 1. let
 2. var 
@@ -29,3 +29,18 @@ Variable: variable is a container which stores the value of same datatype.
  * Subsequent characters can be letters, numbers, underscores, or dollar signs.
  * Variable names are case-sensitive (e.g., myVar and myvar are different).
  * Reserved keywords (like function, class, return, if, else, etc.) cannot be used as variable names. 
+
+ # Data type:
+    Data types in JavaScript classify the different kinds of values that can be stored and manipulated within the language.
+        There are two types of data types:
+        1. primitive datatype
+        2. non primitive datatype
+    
+    1. Primitive datatype:
+        These represent single, immutable values and are directly stored in memory. They are:
+        
+a. Number: Represents both integers and floating-point numbers (e.g., 42, 3.14).
+b. String: Represents sequences of characters enclosed in single or double quotes (e.g., "hello world", 'JavaScript').
+c. Boolean: Represents logical values, either true or false.
+d. Undefined: Represents a variable that has been declared but not yet assigned a value. 
+e. Null: Represents the intentional absence of any object value. It is a standalone type with a single value, null.

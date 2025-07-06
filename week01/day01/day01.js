@@ -1,3 +1,5 @@
+// # VARIABLES:
+
 // 1. let  (example):
     let y = 5;
     // let y = 15; // Error: Cannot re-declare block-scoped variable 'y'
@@ -19,4 +21,14 @@
     person.name = "Bob"; // Allowed: modifying object content
     // person = { name: "Charlie" }; // Error: Assignment to constant variable
     console.log(person)
-    
+
+// --------------------------------------------------------------------------------------------------------
+
+// B. DATATYPES:  
+let number = 23 //num
+let college =  "ismt" //string
+let c1 = true //boolean
+let data1 = null  //null
+let a = undefined //undefinded
+
+console.log(number, college,  c1, data1, a)
