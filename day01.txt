@@ -1,0 +1,31 @@
+
+Variable: variable is a container which stores the value of same datatype.
+    Types of variables used in js:
+1. let
+2. var 
+3. const
+
+1. let :
+ * Introduced in ES6 (ECMAScript 2015), let provides block-scoped variables. 
+ * This means let variables are only accessible within the block 
+      (e.g., if statements, for loops, or function blocks) where they are declared.
+ * They can be updated, but not re-declared within the same scope.
+   
+
+2. var:
+ * This is the oldest keyword for declaring variables.
+ * var variables are function-scoped or globally-scoped, meaning their scope is limited to the function 
+    they are declared in, or they are accessible globally if declared outside any function.
+ * They can be re-declared and updated.
+
+3. const:
+ * Also introduced in ES6, const is used to declare block-scoped constants.
+ * Once a value is assigned to a const variable, it cannot be reassigned or re-declared.
+ * It is important to note that for objects and arrays declared with const, 
+    their contents can still be modified, but the variable itself cannot be pointed to a new object or array.
+
+# Naming Rules for Variables:
+ * Variable names must begin with a letter, an underscore (_), or a dollar sign ($).
+ * Subsequent characters can be letters, numbers, underscores, or dollar signs.
+ * Variable names are case-sensitive (e.g., myVar and myvar are different).
+ * Reserved keywords (like function, class, return, if, else, etc.) cannot be used as variable names. 
