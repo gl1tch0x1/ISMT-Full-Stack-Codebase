@@ -32,3 +32,12 @@ let data1 = null  //null
 let a = undefined //undefinded
 
 console.log(number, college,  c1, data1, a)
+console.log(typeof data1)
+console.log(typeof college)
+
+
+// let a = 25
+// let b = "6"
+// let d = 2
+// let c = a + d + b
+// console.log(c)
