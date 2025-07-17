@@ -14,7 +14,8 @@ for (let property in phone) {
   console.log(`${property}: ${phone[property]}`);
 }
 
-// for ... of loop
+
+// // for ... of loop
 const prices = new Map([
   ["Laptop", 1000],
   ["Phone", 500],
