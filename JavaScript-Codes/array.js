@@ -44,16 +44,33 @@ console.log(name2);
 console.log(name3);
 console.log(name4);
 
-// WAP to create a array using,
-// Define them in short. 
 
-/*
 
-1. concat()
-2. toString()
-3. indexOf()
-4. find()
-5. slice()
-6. sort()
+// WAP in js using array method. Also Define them in short. 
 
-*/
+
+// 1. concat() - Joins two arrays
+let a = [1, 2];
+let b = [3, 4];
+console.log(a.concat(b)); // [1, 2, 3, 4]
+
+// 2. toString() - Makes array a string
+let fruits = ["Apple", "Banana"];
+console.log(fruits.toString()); // "Apple,Banana"
+
+// 3. indexOf() - Finds position of item
+let nums = [10, 20, 30];
+console.log(nums.indexOf(20)); // 1
+
+// 4. find() - Gets first matching item
+let ages = [17, 18, 19];
+console.log(ages.find(age => age >= 18)); // 18
+
+// 5. slice() - Copies part of array
+let letters = ['a', 'b', 'c', 'd'];
+console.log(letters.slice(1, 3)); // ['b', 'c']
+
+// 6. sort() - Sorts array (alphabetically by default)
+let numbers = [3, 1, 4, 2];
+numbers.sort();
+console.log(numbers); // [1, 2, 3, 4]
