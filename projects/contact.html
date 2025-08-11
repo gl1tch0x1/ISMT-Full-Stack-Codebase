@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CoffeeStory Memories - Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/menu.html">Menu</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/login-signup.html">Login/Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="contact-hero">
+    <div class="hero-content">
+      <h1 class="hero-title" style="border-radius: 1cm;">Get in Touch</h1>
+      <p class="hero-subtitle">We'd love to hear from you! Let's brew something amazing together.</p>
+    </div>
+  </div>
+
+  <!-- Main Contact Section -->
+  <div class="contact-main">
+    <div class="contact-grid">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>Have a question, suggestion, or just want to share your coffee story? We're here to listen and help!</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Visit Us</h3>
+              <p>123 Coffee Street<br>Brew City, BC 12345</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Call Us</h3>
+              <p>+1 (555) 123-4567<br>Mon-Fri: 8AM-6PM</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email Us</h3>
+              <p>hello@coffeestory.com<br>We'll respond within 24 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h3>Follow Our Journey</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-section">
+        <div class="form-container">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback & Suggestions</option>
+                <option value="partnership">Partnership Opportunities</option>
+                <option value="support">Customer Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="success-message">
+    <div class="success-content">
+      <i class="fas fa-check-circle"></i>
+      <h3>Message Sent Successfully!</h3>
+      <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+      <button class="close-btn" onclick="closeSuccessMessage()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 CoffeeStory. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
