@@ -1,0 +1,216 @@
+<!-- Creating a simple website for coffee, where there should be a menu, a gallery, about us section, 
+contact form and login/signup section -->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>CoffeeStory: The Journey of Your Favorite Brew</title>
+  </head>
+  <body>
+
+    <!-- Navigation Bar started -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="/menu.html">Menu</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/login-signup.html">Login/Signup</a></li>
+      </ul>
+    </nav>
+    <!-- Navigation Bar ends -->
+
+    <!-- Header Section starts -->
+    <header>
+      <h1 class="header-title" id="welcome-title">Welcome to CoffeeStory</h1>
+      <p class="tagline">Your one-stop destination for coffee lovers !</p>
+    </header>
+    <!-- Header Section ends -->
+
+    <!-- Main title Section starts -->
+    <h2 class="section-title">History of Coffee</h2>
+    <!-- Main title Section ends -->
+
+    <!-- Origins Section starts -->
+    <section>
+      <h3 id="origins">Origins</h3>
+      <p class="history-text" id="origins-text">
+        The history of coffee is a bit of a delicious mystery. We don’t have
+        official documentation to confirm exactly who <br />
+        discovered coffee trees for the first time, or who invented coffee as
+        the beverage we know today. However, <br />
+        we do have colorful legends we can use to piece together a rich tapestry
+        of coffee <br />
+        history—and follow coffee’s journey across the globe.
+      </p>
+      <!-- Origins Section ends -->
+
+      <!-- Image Section starts -->
+      <img
+        src="https://www.aboutcoffee.org/wp-content/uploads/2024/10/hand-feeding-goats-coffee-cherries-1536x864.jpg"
+        alt="Coffee History"
+        style="
+          width: 70%;
+          height: 70%;
+          border-radius: 10px;
+          display: block;
+          margin: auto;
+        "
+      />
+      <p style="text-align: center; font-style: italic">
+        Image Source:
+        <a href="https://www.aboutcoffee.org/coffee-history/"
+          >History of Coffee</a
+        >
+      </p>
+      <!-- Image Section ends -->
+
+      <!-- Raise Section started -->
+      <h3 id="origins" class="raise">17th Century: Rise of Coffee Plantations in Asia</h3>
+      <p class="history-text" id="origins-text">
+        As demand for coffee continued to spread, there was fierce competition
+        to produce coffee beyond Arabia. The Dutch finally got coffee tree
+        <br />
+        seedlings in the latter half of the 17th century. Their first attempts
+        to grow them in India failed, but they were successful with their
+        efforts in what <br />
+        is now Indonesia, on the island of Java. The trees thrived and soon the
+        Dutch had a productive and growing trade in coffee.<br />
+        They then expanded the cultivation of coffee trees to the islands of
+        Sumatra and Sulawesi.
+      </p>
+      <!-- Raise Section ended -->
+
+      <!-- Image Section starts -->
+
+      <img
+        src="https://www.aboutcoffee.org/wp-content/uploads/2024/10/Gabriel-De-Clieu-takes-coffee-to-the-americas-1536x864.jpg"
+        alt="Gabriel De Clieu takes coffee to the Americas"
+        style="
+          width: 70%;
+          height: 70%;
+          border-radius: 10px;
+          display: block;
+          margin: auto;
+        "
+      />
+      <p style="text-align: center; font-style: italic">
+        Gabriel De Clieu transporting coffee to Martinique — via:
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Gabriel_De_Clieu_transporting_coffee_to_Martinique.jpg"
+          >Wikimedia Commons</a
+        >
+      </p>
+      <!-- Image Section ended -->
+
+      <!-- Article Section starts -->
+      <h3 id="origins" class="replace">18th Century: Coffee Replaces Tea in the New World</h3>
+      <p class="history-text" id="introduction-text">
+        In the mid-1600s, coffee was brought to what is now New York City.
+        Though coffee houses emerged and grew in popularity over the next
+        century, <br />
+        tea was still the favored drink in the New World until King George III
+        imposed a heavy tax on it in 1773. As you probably know, the tax ignited
+        significant <br />
+        protest and led to the revolt known as the Boston Tea Party. As you may
+        not know, that event didn’t just change the course of American
+        history—it forever <br />
+        changed Americans’ beverage preference to coffee.
+      </p>
+      <!-- Article Section ended -->
+
+      <!-- Image Section starts -->
+      <img
+        src="https://www.aboutcoffee.org/wp-content/uploads/2024/10/industrial-coffee-roasting-1881-1536x864.jpg"
+        alt="Industrial Coffee Roasting 1881"
+        style="
+          width: 70%;
+          height: 70%;
+          border-radius: 10px;
+          display: block;
+          margin: auto;
+        "
+      />
+      <p style="text-align: center; font-style: italic">
+        Industrial Coffee Roasting, 1800s — via:
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Coffee;_from_plantation_to_cup._A_brief_history_of_coffee_production_and_consumption._With_an_appendix_containing_letters_written_during_a_trip_to_the_coffee_plantations_of_the_East_and_through_the_%2820541593090%29.jpg"
+          >Wikimedia Commons</a
+        >
+      </p>
+      <!-- Image Section ended -->
+    </section>
+
+    <!--Creating News Letter Section -->
+
+    <h1 class="nl-head" style="margin-top: 60px">
+      Subscribe to Our Newsletter
+    </h1>
+    <section class="newsletter">
+      <form
+        action="/subscribe"
+        method="post"
+        onsubmit="showPopup(); return false;"   <!--Calls the function showPopup()-->
+
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="preferences">Select Your Preference</label>
+        <select id="preferences" name="preferences">
+          <option value="coffee">Coffee</option>
+          <option value="tea">Tea</option>
+          <option value="news">News</option>
+        </select>
+
+        <label for="comments">Additional Comments</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          cols="50"
+          placeholder="Let us know your thoughts..."
+        ></textarea>
+
+        <button type="submit">Subscribe</button>
+      </form>
+      <p
+        style="
+          margin-top: 18px;
+          text-align: center;
+          font-size: 17px;
+          color: #ffe6c7;
+        "
+      >
+        Stay updated with the latest coffee news and offers!
+      </p>
+    </section>
+
+<!-- Implementing the JS in the code for prompting Thank You! -->
+
+<div id="thankYouPopup">Thank You for subscribing!</div>
+
+
+    <!-- News Letter Section Ends -->
+    <footer class="footer">
+      <p>&copy; 2025 CoffeeStory. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

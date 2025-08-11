@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic JS DOM Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    button, input, select {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body onload="alert('Page Loaded Successfully!')">
+
+  <h1>JavaScript Basic DOM Events Examples</h1>
+
+  <!-- onclick -->
+  <div class="section">
+    <h3>1. onclick Event</h3>
+    <button onclick="alert('Button clicked!')">Click Me</button>
+  </div>
+
+  <!-- onmouseover -->
+  <div class="section">
+    <h3>2. onmouseover Event</h3>
+    <p onmouseover="this.style.color='red'">Hover over this text</p>
+  </div>
+
+  <!-- onmouseout -->
+  <div class="section">
+    <h3>3. onmouseout Event</h3>
+    <p onmouseout="this.style.color='black'" style="color: red;">Move your mouse out of this text</p>
+  </div>
+
+  <!-- onchange -->
+  <div class="section">
+    <h3>4. onchange Event</h3>
+    <select onchange="alert('You changed the option!')">
+      <option value="">-- Select --</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </select>
+  </div>
+
+  <!-- onkeydown -->
+  <div class="section">
+    <h3>5. onkeydown Event</h3>
+    <input type="text" onkeydown="console.log('Key pressed!')" placeholder="Type something here">
+  </div>
+
+  <!-- onsubmit -->
+  <div class="section">
+    <h3>6. onsubmit Event</h3>
+    <form onsubmit="alert('Form submitted!'); return false;">
+      <input type="text" required placeholder="Enter your name">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- addEventListener -->
+  <div class="section">
+    <h3>7. addEventListener (Modern Way)</h3>
+    <button id="btn">Click me</button>
+  </div>
+
+  <script>
+    // Using addEventListener (modern way)
+    document.getElementById("btn").addEventListener("click", function() {
+      alert("Clicked using addEventListener!");
+    });
+  </script>
+
+  <!-- oninvalid -->
+    <p>oninvalid() event used </p>    
+      <form action="/action_page.php" method="get">
+  Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

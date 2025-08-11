@@ -1,0 +1,219 @@
+/* index.html : css design */     
+     
+     body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: #f7f2ee;
+          /* Light coffee color */
+      }
+
+      header {
+          background-color: #6f4e37;
+          /* Coffee color */
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+          font-size: 24px;
+          border-radius: 100px;
+      }
+
+      .header-title {
+          font-size: 46px;
+          margin: 0;
+      }
+
+      .tagline {
+          color: #f0f0f0;
+          /* Light color for tagline */
+          font-size: 18px;
+          margin-top: 5px;
+      }
+
+      nav {
+          margin: 10px 0;
+      }
+
+      nav ul {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+      }
+
+      nav ul li {
+          display: inline;
+          margin: 0 15px;
+      }
+
+      nav ul li a {
+          color: #302218;
+          /* Dark coffee color */
+          text-decoration: none;
+      }
+
+      section {
+          padding: 20px;
+          border-bottom: 1px solid #eee;
+      }
+
+      .section-title {
+          font-size: 48px;
+          color: #6f4e37;
+          /* Coffee color */
+          margin-bottom: 10px;
+          text-align: center;
+          font-family: "Lucida Handwriting",  Cursive
+          /* Serif font for history text */
+      }
+
+      #origins {
+          font-weight: bold;
+          color: #6f4e37;
+          /* Coffee color */
+          text-align: center;
+          font-size: 28px;
+          /* Italic for emphasis */
+          font-family: "Brush Script MT" , Cursive
+          /* Serif font for history text */
+      }
+
+      .history-text {
+          font-size: 18px;
+          color: #302218;
+          /* Dark coffee color */
+          text-align: center;
+          margin: 10px 0;
+          font-style: italic;
+          /* Italic for emphasis */
+          font-family: "Georgia", serif;
+          /* Serif font for history text */
+      }
+
+      .raise {
+          margin-top: 120px;
+      }
+
+      .replace {
+          margin-top: 120px;
+      }
+
+      .newsletter {
+          background-color: #936f57ff;
+          /* Coffee color */
+          color: #fff;
+          text-align: left;
+          margin: 30px auto 0 auto;
+          border-radius: 12px;
+          font-family: "Georgia", serif;
+          /* Serif font for newsletter */
+          font-size: 20px;
+          max-width: 480px;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+          padding: 32px 36px 18px 36px;
+      }
+
+      .newsletter form {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+      }
+
+      .newsletter label {
+          font-size: 18px;
+          margin-bottom: 2px;
+          color: #ffe6c7;
+          font-weight: 600;
+      }
+
+      .newsletter input,
+      .newsletter select,
+      .newsletter textarea {
+          font-size: 17px;
+          padding: 7px 10px;
+          border-radius: 5px;
+          border: 1px solid #bfa08a;
+          margin-bottom: 18px;
+          background: #f7f2ee;
+          color: #6f4e37;
+          font-family: inherit;
+      }
+
+      .newsletter button[type="submit"] {
+          background-color: #6f4e37;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 0;
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 8px;
+          transition: background 0.2s;
+      }
+
+      .newsletter button[type="submit"]:hover {
+          background-color: #4b3221;
+      }
+
+      .nl-head {
+          font-size: 44px;
+          margin-bottom: 18px;
+          color: #6f4e37;
+          text-align: center;
+      }
+
+      footer {
+          text-align: center;
+          padding: 10px 0 6px 0;
+          background: #6f4e37;
+          /* Coffee color */
+          color: #fff;
+          margin-top: 18px;
+      }
+
+      #thankYouPopup {
+          display: none;
+          position: fixed;
+          top: 60%;
+          left: 40%;
+          background-color: #6f4e37;
+          color: white;
+          padding: 20px 35px;
+          border-radius: 10px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+          font-size: 20px;
+
+      }
+
+
+/* menu.html : css design */
+
+    body {
+      padding: 40px;
+      background-color: #fffaf0;
+      font-family: "Lucida Handwriting",  Cursive
+    }
+
+    h1{
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h4 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px dotted #ccc;
+    }
