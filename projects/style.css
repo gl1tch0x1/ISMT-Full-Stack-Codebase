@@ -519,3 +519,279 @@ li {
 .close-btn:hover {
     background: #4b3221;
 }
+
+
+
+        /* Login/Signup specific styles */
+        
+
+        /* Login/Signup specific styles */
+        .auth-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f7f2ee 0%, #fffaf0 100%);
+            padding: 40px 20px;
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .auth-title {
+            font-size: 3.5rem;
+            color: #6f4e37;
+            margin: 0 0 15px 0;
+            font-family: "Lucida Handwriting", Cursive;
+        }
+
+        .auth-subtitle {
+            font-size: 1.2rem;
+            color: #936f57;
+            margin: 0;
+            font-family: "Georgia", serif;
+        }
+
+        .auth-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            gap: 10px;
+        }
+
+        .tab-btn {
+            background: #e0d3c7;
+            color: #6f4e37;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px 25px 0 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: "Georgia", serif;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background: #6f4e37;
+            color: white;
+        }
+
+        .tab-btn:hover:not(.active) {
+            background: #bfa08a;
+        }
+
+        .auth-form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 40px rgba(111, 78, 55, 0.1);
+            overflow: hidden;
+        }
+
+        .auth-form {
+            display: none;
+            padding: 40px;
+        }
+
+        .auth-form.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #6f4e37;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: "Georgia", serif;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0d3c7;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: #faf8f6;
+            color: #302218;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #6f4e37;
+            background: white;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #6f4e37;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #6f4e37, #936f57);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: "Georgia", serif;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #4b3221, #6f4e37);
+            transform: translateY(-2px);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #936f57;
+            font-family: "Georgia", serif;
+        }
+
+        .form-footer a {
+            color: #6f4e37;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 30px 0;
+            position: relative;
+            color: #936f57;
+            font-family: "Georgia", serif;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #e0d3c7;
+        }
+
+        .divider span {
+            background: white;
+            padding: 0 20px;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #e0d3c7;
+            border-radius: 10px;
+            background: white;
+            color: #6f4e37;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: "Georgia", serif;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            border-color: #6f4e37;
+            background: #f7f2ee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-home a {
+            color: #6f4e37;
+            text-decoration: none;
+            font-family: "Georgia", serif;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid #6f4e37;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .back-home a:hover {
+            background: #6f4e37;
+            color: white;
+        }
+
+        .success-message {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            font-family: "Georgia", serif;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .auth-title {
+                font-size: 2.5rem;
+            }
+            
+            .auth-form-container {
+                margin: 0 20px;
+            }
+            
+            .auth-form {
+                padding: 30px 25px;
+            }
+            
+            .social-login {
+                flex-direction: column;
+            }
+        }
+   
+    

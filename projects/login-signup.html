@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup - CoffeeStory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Header -->
+        <div class="auth-header">
+            <h1 class="auth-title">Welcome to CoffeeStory</h1>
+            <p class="auth-subtitle">Sign in to your account or create a new one</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="auth-tabs">
+            <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+            <button class="tab-btn" onclick="switchTab('signup')">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="auth-form-container">
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" name="email" required placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+                        <button type="button" class="password-toggle" onclick="togglePassword('loginPassword')">👁️</button>
+                    </div>
+                </div>
+
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                    <label style="margin: 0;">
+                        <input type="checkbox" name="remember" style="width: auto; margin-right: 8px;">
+                        Remember me
+                    </label>
+                    <a href="#" style="color: #6f4e37; text-decoration: none; font-size: 0.9rem;">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign In</button>
+
+                <div class="divider">
+                    <br>
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn">Google</button>
+                    <button type="button" class="social-btn">Facebook</button>
+                </div>
+
+                <div class="form-footer">
+                    Don't have an account? <a href="#" onclick="switchTab('signup')">Sign up here</a>
+                </div>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" name="fullName" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="signupPassword" name="password" required placeholder="Create a password">
+                        <button type="button" class="password-toggle" onclick="togglePassword('signupPassword')">👁️</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                        <button type="button" class="password-toggle" onclick="togglePassword('confirmPassword')">👁️</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="margin: 0;">
+                        <input type="checkbox" name="terms" required style="width: auto; margin-right: 8px;">
+                        I agree to the <a href="#" style="color: #6f4e37;">Terms of Service</a> and <a href="#" style="color: #6f4e37;">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+
+                <div class="divider">
+                    <br>
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn">Google</button>
+                    <button type="button" class="social-btn">Facebook</button>
+                </div>
+
+                <div class="form-footer">
+                    Already have an account? <a href="#" onclick="switchTab('login')">Sign in here</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="back-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3 id="successTitle">Success!</h3>
+            <p id="successText">Action completed successfully!</p>
+            <button class="close-btn" onclick="closeSuccessMessage()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
