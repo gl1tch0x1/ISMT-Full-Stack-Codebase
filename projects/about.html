@@ -1,25 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CoffeeStory Memories</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/menu.html">Menu</a></li>
-        <li><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/login-signup.html">Login/Signup</a></li>
-      </ul>
-    </nav>
 
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - CoffeeStory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    /* Minimal, page-scoped styles */
+    .about-container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
 
+    .about-section {
+      margin: 30px 0;
+    }
 
+    .about-section h2 {
+      color: #6f4e37;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
-  </body>
+    .about-lead {
+      color: #302218;
+      font-family: "Georgia", serif;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .values-list {
+      padding-left: 18px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .values-list li {
+      margin: 6px 0;
+    }
+
+    /* Mission split layout - minimal */
+    .mission {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .mission-text { flex: 1; }
+    .mission-image { flex: 1; text-align: center; }
+    .mission-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #e0d3c7;
+    }
+    @media (max-width: 768px) {
+      .mission { flex-direction: column; }
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .team-card {
+      width: 260px;
+      background: #ffffff;
+      border: 1px solid #e0d3c7;
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .team-card h4 {
+      margin: 10px 0 6px 0;
+      color: #6f4e37;
+    }
+
+    .team-card p {
+      margin: 0;
+      color: #302218;
+      font-family: "Georgia", serif;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/menu.html">Menu</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/login-signup.html">Login/Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header (reuse global header styles) -->
+  <header>
+    <h1 class="header-title">About CoffeeStory</h1>
+    <p class="tagline">Brewing moments, one cup at a time.</p>
+  </header>
+
+  <div class="about-container">
+    <!-- Our Story -->
+    <section class="about-section">
+      <h2 class="section-title">Our Story</h2>
+      <p class="about-lead">
+        CoffeeStory began with a simple belief: great coffee brings people together.
+        From our first small-batch roast to our curated menu today, we’ve always focused on
+        quality, warmth, and community. Every bean we select, every cup we brew, and every memory
+        we help create reflects that passion.
+      </p>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="about-section">
+      <h2 class="section-title">Our Mission & Values</h2>
+      <div class="mission">
+        <div class="mission-text">
+          <p class="about-lead">
+            Our mission is simple: serve exceptional coffee and create a welcoming space for everyone.
+            We value craftsmanship in every roast, hospitality in every interaction, and responsibility
+            in every choice we make—from transparent sourcing to sustainable practices that respect our
+            community and the planet.
+          </p>
+        </div>
+        <div class="mission-image">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Coffee cup and beans">
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="about-section">
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="team">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop"
+            alt="Founder">
+          <h4>Alex Rivera</h4>
+          <p>Founder & Head Roaster</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop"
+            alt="Barista Lead">
+          <h4>Maya Chen</h4>
+          <p>Barista Lead</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop"
+            alt="Experience Designer">
+          <h4>Jordan Lee</h4>
+          <p>Experience Designer</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 CoffeeStory. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
